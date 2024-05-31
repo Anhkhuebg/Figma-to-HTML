@@ -5,5 +5,78 @@ html {
   font-size: 62.5%;
 }
 body {
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+}
+/* ================================Comnon=========== */
+a {
+  position: relative;
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  display: inline-block;
+  color: #ffffff;
+  background: #000000;
+  min-width: 118px;
+  line-height: 50px;
+  padding: 0px 16px;
+  border-radius: 24.5px;
+  text-align: center;
+}
+
+/* =================================Header=========== */
+.header {
+  background: #fffcf4;
+}
+.header .Fixed {
+  position: sticky;
+  top: -24px;
+}
+.header .bodyheader {
+  display: flex;
+  /* Căn giữa các khối */
+  align-items: center;
+  margin: 36px 0 9px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+.nav li.active a,
+.nav a:hover {
+  color: #000000;
+  text-shadow: 1px 0px 0px currentColor;
+}
+.nav li.active a::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 21px;
+  bottom: 6px;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #000000;
+}
+
+.header.btn-sign-up {
+  width: 144px;
+}
+.header .action {
+  margin-left: 49px;
 }
